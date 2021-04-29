@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/brands.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>typing game</title>
+</head>
+<body>
+    <button id="setting-btn" class="setting-btn">
+        <i class="fas fa-cog"></i>
+    </button>
+    <div id="setting" class="setting">
+        <form id="setting-form">
+            <div>
+                <label for="difficulty">Difficulty</label>
+                <select id="difficulty">
+                    <option value="easy">Easy</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Hard">Hard</option>
+                </select>
+            </div>
+        </form>
+    </div>
+
+    <!-- <div id="start-game-container" class="start-game-container">
+        <button class="start-btn">play game</button>
+    </div> -->
+
+    <div class="container">
+        <h2>FAST FINGER</h2>
+        <small>type the following</small>
+
+        <h1 id="word">GOOD</h1>
+        <input type="text" id="text" autocomplete="off" placeholder="type word here">
+
+        <p class="time-container">
+            time left : <span id="time">10s</span>
+        </p>
+        <p class="score-container">
+            score:<span id="score">0</span>
+        </p>
+
+        <div id="end-game-container" class="end-game-container"></div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
